@@ -2,8 +2,10 @@ package com.example.android.musicalstructureapp;
 
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toolbar;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -13,6 +15,14 @@ public class FavouriteSongs extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
+
+
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Stuck With U", "Ariana Grande & Justin Bieber"));

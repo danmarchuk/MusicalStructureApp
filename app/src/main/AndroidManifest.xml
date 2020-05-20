@@ -19,10 +19,12 @@
 
         <activity
             android:name=".DiscoverWeeklyActivity"
-            android:label="Discover Weekly"/>
+            android:label="Discover Weekly"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".FavouriteSongs"
-            android:label="Favourite Songs"/>
+            android:label="Favourite Songs"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
