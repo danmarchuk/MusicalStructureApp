@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="discover_weekly">Discover Weekly</string>
+    <string name="favourite_songs">Favourite Songs</string>
+</resources>
